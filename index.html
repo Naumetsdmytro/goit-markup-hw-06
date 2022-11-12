@@ -349,11 +349,16 @@
                         class="text-modal-form"></textarea>
                 </div>
                 <div class="check-container">
-                    <input type="checkbox" name="consent" id="checkbox">
-                    <label for="checkbox" class="form-label">Погоджуюся з розсилкою та приймаю <a href=""
+                    <input type="checkbox" name="consent" id="checkbox" class="form-checkbox visually-hidden">
+                    <svg class="form-check-icon" width="16" height="15">
+                        <use class="unchecked" href="./images/icons.svg#check-ram"></use>
+                        <use class="checked" href="./images/icons.svg#iconcheck"></use>
+                    </svg>
+                    <label for="checkbox" class="form-label label-check">Погоджуюся з розсилкою та приймаю <a href=""
                             class="check-link">Умови
                             договору</a></label>
                 </div>
+                <button type="submit" class="btn-form-modal">Відправити</button>
             </form>
         </div>
     </div>
