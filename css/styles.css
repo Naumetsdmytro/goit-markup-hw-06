@@ -836,11 +836,9 @@ img {
     letter-spacing: 0.01em;
     color: #757575;
     padding: 0;
-}
-
-.form-label:not(:last-child) {
     margin-bottom: 4px;
 }
+
 
 .form-input {
     outline: transparent;
@@ -907,18 +905,9 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--hover-color);
-    text-decoration: underline;
     margin-left: 7px;
 }
 
-.check-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-}
 
 .checkbox {
     margin: 0;
@@ -927,7 +916,15 @@ img {
 }
 
 .label-check {
-    margin-left: 7px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
 }
 
 .btn-form-modal {
@@ -977,4 +974,8 @@ img {
 .form-check-icon .checked {
     opacity: 0;
     transition: opacity 250ms var(--baze-cubic);
+}
+
+.form-check-icon {
+    margin-right: 7px;
 }
